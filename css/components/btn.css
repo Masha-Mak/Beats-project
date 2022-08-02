@@ -1,0 +1,20 @@
+.btn {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 18px 35px;
+  text-transform: uppercase;
+  border-radius: 100px;
+  line-height: 1;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+}
+.btn--theme--red {
+  background: #E01F3D;
+  color: #FFFFFF;
+}
+.btn--theme--transparent {
+  background: transparent;
+  color: #FFFFFF;
+  text-transform: none;
+}

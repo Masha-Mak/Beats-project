@@ -1,0 +1,12 @@
+.order-section {
+  background: url("../../images/4430b7c5c5f2bc6a5b367211b5907e94.png");
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.order-section::before {
+  content: url("../../images/Polygon 2.png");
+  position: absolute;
+  top: -21px;
+  right: 0;
+}

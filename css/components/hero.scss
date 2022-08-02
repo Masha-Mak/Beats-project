@@ -1,0 +1,34 @@
+.hero{
+    background: url('../../images/Rectangle\ 14.png') right bottom no-repeat;
+    background-color: #F5F5F5;
+    height: 100vh;
+    min-height: 650px;
+    color: #292929;
+}
+
+.hero__title-section{
+    width: 50%;
+}
+
+.hero__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 24px 0 50px;
+    background: url('../../images/Ellipse\ 5.png') right center / 50% auto no-repeat;
+}
+
+.hero__main-title{
+    font-size: 48px;
+    line-height: 1.1;
+    font-weight: bold;
+    margin-bottom: 22px;
+    text-transform: uppercase;
+}
+
+.hero__title-desc{
+    font-size: 21px;
+    margin-bottom: 36px;
+    padding-right: 22%;
+}
