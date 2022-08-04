@@ -30,6 +30,7 @@
   position: relative;
   border-radius: 50%;
   background: #FFFFFF;
+  margin-right: 10px;
 }
 .radio__visible:before {
   content: "";
@@ -43,4 +44,8 @@
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.radio__title {
+  margin-right: 16px;
 }

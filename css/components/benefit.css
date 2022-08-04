@@ -28,5 +28,6 @@
 }
 
 .benefit__desc {
-  max-width: 76%;
+  max-width: 90%;
+  margin: 0 auto;
 }

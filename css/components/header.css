@@ -8,6 +8,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 24px 0 50px;
 }
 
 .menu__list {
