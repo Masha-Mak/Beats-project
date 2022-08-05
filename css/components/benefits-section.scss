@@ -4,7 +4,7 @@
     &::before{
         content: url('../../images/Vector\ 2.png');
         position: absolute;
-        bottom: -80px;
+        bottom: rem(-80px);
         left: 0;
     }
 }

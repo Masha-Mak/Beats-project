@@ -4,6 +4,6 @@
 .reviews-section::before {
   content: url("../../images/Ellipse 7.png");
   position: absolute;
-  bottom: -80px;
+  bottom: rem(-80px);
   left: 0;
 }

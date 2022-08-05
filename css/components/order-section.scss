@@ -8,7 +8,7 @@
     &::before{
         content: url('../../images/Polygon\ 2.png');
         position: absolute;
-        top: -21px;
+        top: rem(-21px);
         right: 0;
 }
 }

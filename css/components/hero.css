@@ -2,7 +2,7 @@
   background: url("../../images/Rectangle 14.png") right bottom no-repeat;
   background-color: #F5F5F5;
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
   color: #292929;
 }
 
@@ -26,15 +26,15 @@
 }
 
 .hero__main-title {
-  font-size: 48px;
+  font-size: rem(48px);
   line-height: 1.1;
   font-weight: bold;
-  margin-bottom: 22px;
+  margin-bottom: rem(22px);
   text-transform: uppercase;
 }
 
 .hero__title-desc {
-  font-size: 21px;
-  margin-bottom: 36px;
+  font-size: rem(21px);
+  margin-bottom: rem(36px);
   padding-right: 22%;
 }
