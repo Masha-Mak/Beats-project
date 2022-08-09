@@ -1,9 +1,0 @@
-.reviews-section {
-  position: relative;
-}
-.reviews-section::before {
-  content: url("../../images/Ellipse 7.png");
-  position: absolute;
-  bottom: rem(-80px);
-  left: 0;
-}
