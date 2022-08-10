@@ -421,7 +421,7 @@ img {
 }
 
 .hero {
-  background: url("../../images/Rectangle 14.png") right bottom no-repeat;
+  background: url("../images/Rectangle 14.png") right bottom no-repeat;
   background-color: #F5F5F5;
   height: 100vh;
   min-height: 36.1111111111rem;
@@ -456,7 +456,7 @@ img {
     content: "";
     width: 17.9444444444rem;
     height: 17.9444444444rem;
-    background: url("../../images/Ellipse 5_768.png") center center/contain no-repeat;
+    background: url("../images/Ellipse 5_768.png") center center/contain no-repeat;
   }
 }
 
@@ -478,7 +478,7 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100%;
-  background: url("../../images/Ellipse 5.png") right center/50% auto no-repeat;
+  background: url("../images/Ellipse 5.png") right center/50% auto no-repeat;
 }
 @media screen and (max-width: 768px) {
   .hero__container {
@@ -781,7 +781,7 @@ img {
   position: relative;
 }
 .benefits-section::before {
-  content: url("../../images/Vector 2.png");
+  content: url("../images/Vector 2.png");
   position: absolute;
   bottom: -4.4444444444rem;
   left: 0;
@@ -899,20 +899,20 @@ img {
   position: relative;
 }
 .reviews-section::before {
-  content: url("../../images/Ellipse 7.png");
+  content: url("../images/Ellipse 7.png");
   position: absolute;
   bottom: -4.4444444444rem;
   left: 0;
 }
 
 .order-section {
-  background: url("../../images/4430b7c5c5f2bc6a5b367211b5907e94.png");
+  background: url("../images/4430b7c5c5f2bc6a5b367211b5907e94.png");
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .order-section::before {
-  content: url("../../images/Polygon 2.png");
+  content: url("../images/Polygon 2.png");
   position: absolute;
   top: -1.1666666667rem;
   right: 0;
@@ -1039,7 +1039,7 @@ img {
   border-radius: 0;
 }
 .radio--checkbox .radio__visible::before {
-  background: url("../../images/Vector1.png");
+  background: url("../images/Vector1.png");
   background-repeat: no-repeat;
 }
 
@@ -1153,7 +1153,7 @@ img {
 }
 
 .map-section {
-  background: url("../../images/map.png");
+  background: url("../images/map.png");
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
