@@ -700,6 +700,11 @@ img {
 .headline__title {
   text-align: center;
 }
+@media screen and (max-width: 480px) {
+  .headline__title {
+    font-size: 32px;
+  }
+}
 
 .benefits {
   display: -webkit-box;
@@ -771,6 +776,11 @@ img {
   font-size: 1.3333333333rem;
   font-weight: bold;
 }
+@media screen and (max-width: 480px) {
+  .benefit__title {
+    margin-left: 0.7222222222rem;
+  }
+}
 
 .benefit__desc {
   max-width: 90%;
@@ -824,6 +834,8 @@ img {
   .reviews__avatar {
     width: 7.2222222222rem;
     height: 7.2222222222rem;
+    margin-right: 0;
+    margin-bottom: 1.7777777778rem;
   }
 }
 
@@ -1074,6 +1086,12 @@ img {
 
 .radio__title {
   margin-right: 0.8888888889rem;
+  margin-bottom: 0.5555555556rem;
+}
+@media screen and (max-width: 480px) {
+  .radio__title {
+    margin-bottom: 1.6666666667rem;
+  }
 }
 
 .fixed-menu {
@@ -1081,6 +1099,11 @@ img {
   top: 20%;
   right: 3%;
   z-index: 100;
+}
+@media screen and (max-width: 768px) {
+  .fixed-menu {
+    display: none;
+  }
 }
 
 .fixed-menu__item {
@@ -1206,6 +1229,15 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+.contacts__place {
+  margin-bottom: 3px;
+}
+@media screen and (max-width: 480px) {
+  .contacts__place {
+    margin-bottom: 0.6666666667rem;
   }
 }
 

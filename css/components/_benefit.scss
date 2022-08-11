@@ -31,6 +31,10 @@
 .benefit__title{
     font-size: rem(24px);
     font-weight: bold;
+
+    @include phones {
+        margin-left: rem(13px);
+    }
 }
 
 .benefit__desc{

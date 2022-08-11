@@ -50,4 +50,9 @@
 
 .radio__title{
     margin-right: rem(16px);
+    margin-bottom: rem(10px);
+
+    @include phones{
+        margin-bottom: rem(30px);
+    }
 }
