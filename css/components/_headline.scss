@@ -16,6 +16,6 @@
     text-align: center;
 
     @include phones{
-        font-size: 32px;
+        font-size: rem(32px);
     }
 }

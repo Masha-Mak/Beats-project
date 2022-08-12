@@ -27,6 +27,14 @@
     }
 }
 
+    @include phones{
+        &::before{
+            content: "";
+            width: 50vw;
+            height: 50vw;
+            background: url('../images/Ellipse 5_768.png') center center / contain no-repeat;
+    }
+    }
 }
 
 .hero__icons-section{
@@ -67,5 +75,11 @@
 
     @include phones {
         padding: 0 16%;
+    }
+}
+
+.hero__main-title{
+    @include phones{
+        font-size: rem(32px);
     }
 }
