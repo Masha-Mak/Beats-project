@@ -1,0 +1,14 @@
+.button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    &--icon--close{
+
+        .button__icon{
+            width: rem(20px);
+            height: rem(20px);
+            fill: #FFFFFF;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.menu{
+    &--column{
+        display: flex;
+
+        .menu__list{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: nowrap;
+        }  
+
+}
+
+    &--color--white{
+        .menu__link{
+            color: #FFFFFF;
+        }
+    }
+
+    &--fz--36{
+        .menu__link{
+        font-size: rem(36px);
+        line-height: rem(72px);
+    }
+}
+}
