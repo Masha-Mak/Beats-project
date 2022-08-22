@@ -17,6 +17,7 @@ class FullMenu{
 
     open() {
         this.menu.classList.add('open')
+        document.body.classList.add('stop-scrolling')
     }
 
     close() {
