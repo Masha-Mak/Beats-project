@@ -5,10 +5,16 @@
     border-radius: 50%;
     overflow: hidden;
     position: relative;
+    cursor: pointer;
 
-    &--active{
-        border-color: red;
-    }
+    // &--active{
+    //     border-color: red;
+    // }
+}
+
+.interactive-avatar.active{
+    border: rem(5px) solid transparent;
+    border-color: red;
 }
 
 .interactive-avatar__link{
