@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beats</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
@@ -127,9 +129,11 @@
             </section>
             <section class="section products">
                 <div class="container">
-                        <button class="products-arrows__left">
-                                <img src="./images/left.svg" class="arrow__left-elem" alt="left"></img>
-                        </button>
+                    <div class="products-slider">
+                    <div class="product-slider__arrows">
+                        <a href="#" class="product-slider__arrow product-slider__arrow--direction--prev"></a>
+                        <a href="#" class="product-slider__arrow product-slider__arrow--direction--next"></a>
+                    </div>
                     <ul class="products__list">
                         <li class="products__item">
                             <div class="products__preview">
@@ -188,10 +192,65 @@
                                 </div>
                             </div>
                         </li>
+                        <li class="products__item">
+                            <div class="products__preview">
+                                <img src="./images/Ellipse 6_red.png" alt="" class="products__img">
+                            </div>
+                            <div class="products__info">
+                                <div class="products__show">
+                                    <button class="products__info-parameter">
+                                        <img src="./images/click.svg" alt="parameter" class="products__info-parameter-elem">
+                                    </button>
+                                        <div class="products__menu">
+                                            <ul class="products__menu__list">
+                                                <li class="products__menu__item">
+                                                    <div class="products__menu__item__img"><img src="./images/grape.svg" alt="bluetooth" class="products__menu__img"></div>
+                                                    <div class="menu__text">Bluetooth</div>
+                                                    <div class="menu__value">4.0</div>
+                                                </li>
+                                                <li class="products__menu__item">
+                                                    <div class="products__menu__item__img"><img src="./images/nut.svg" alt="nut" class="products__menu__img"></div>
+                                                    <div class="menu__text">Дальность</div>
+                                                    <div class="menu__value">10 м</div>
+                                                </li>
+                                                <li class="products__menu__item">
+                                                    <div class="products__menu__item__img"><img src="./images/almond.svg" alt="" class="products__menu__img"></div>
+                                                    <div class="menu__text">Зарядка</div>
+                                                    <div class="menu__value">2 ч</div>
+                                                </li>
+                                                <li class="products__menu__item">
+                                                    <div class="products__menu__item__img"><img src="./images/washing-powder.svg" alt="" class="products__menu__img"></div>
+                                                    <div class="menu__text">Вес</div>
+                                                    <div class="menu__value">215гр</div>
+                                                </li>
+                                                <li class="products__menu__item">
+                                                    <div class="products__menu__item__img"><img src="./images/apitherapy.svg" alt="" class="products__menu__img"></div>
+                                                    <div class="menu__text">Гарантия</div>
+                                                    <div class="menu__value">1 год</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                </div>
+                                <h2 class="products__title">beats solo pro. цвет «красный цитрус»</h2>
+                                <p class="products__desc">Беспроводные наушники Solo Pro помогают настроиться на творчество. Для этого предусмотрено два режима прослушивания: режим с активным шумоподавлением и Прозрачный режим.</p>
+                                <ul class="products__property">
+                                    <li class="products__property-item">
+                                        <span class="products__property-title">Зарядка</span>
+                                        <span class="products__property-count">2 часа</span>
+                                    </li>
+                                    <li class="products__property-item">
+                                        <span class="products__property-title">Вес</span>
+                                        <span class="products__property-count">215 грамм</span>
+                                    </li>
+                                </ul>
+                                <div class="products__footer">
+                                    <div class="products__price">14 990 ₽</div>
+                                    <button class="btn products__btn btn--theme--red">Заказать</button>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
-                        <button class="products-arrows__right">
-                                <img src="./images/right.svg" class="arrow__right-elem" alt="right"></img>
-                        </button>
+                    </div>
                 </div>
             </section>
 
@@ -266,8 +325,8 @@
                             <button class="team__title" type="button">Алла Иванова</button>
                                 <div class="team__content">
                                     <div class="team__content-block">
-                                        <div class="team__member">
-                                            <img src="./images/Rectangle 4_2.jpg" alt="team member" class="team__member-pic">
+                                            <div class="team__member">
+                                                <img src="./images/Rectangle 4_2.jpg" alt="team member" class="team__member-pic">
                                             </div>
                                         <div class="team__content-position">Специалист по упаковке</div>
                                         <div class="team__content-text">Автор запоминающегося стиля наших батончиков.</div>
@@ -380,39 +439,40 @@
                 <div class="container">
                     <h2 class="section__title">Закажите доставку</h2>
                     <form action="" class="form">
+                        <input type="hidden" name="to" value="somewhere@mail.com">
                         <div class="form__col">
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Имя</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="name" class="form__input">
                                 </label>
                                 <label class="form__block">
                                     <div class="form__title">Телефон</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="phone" class="form__input">
                                 </label>
                             </div>
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Улица</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="street" class="form__input">
                                 </label>
                             </div>
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Дом</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="home" class="form__input">
                                 </label>
                                 <label class="form__block">
                                     <div class="form__title">Корпус</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="part" class="form__input">
                                 </label>
                                 <label for="" class="form__block">
                                     <div class="form__title">Квартира</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="appartment" class="form__input">
                                 </label>
                                 <label class="form__block">
                                     <div class="form__title">Этаж</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="floor" class="form__input">
                                 </label>
                             </div>
                         </div>
@@ -450,6 +510,16 @@
                     </form>
                 </div>
             </section>
+            <div id="modal" class="modal">
+                <div class="modal__container">
+                    <div class="modal__content">
+                        Сообщение отправлено
+                    </div>
+                    <div class="modal__button-container">
+                        <a href="" class="btn app-submit-btn btn--theme--red">Закрыть</a>
+                    </div>
+                </div>
+            </div>
             <section class="section map-section">
                 <div id="map"></div>
                 <footer class="footer">
@@ -547,9 +617,14 @@
             </svg>
         </button>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="./js/index.js"></script>
     <script src="./js/acco.js"></script>
     <script src="./js/tabs.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/modal.js"></script>
+
 </body>
 </html>

@@ -107,3 +107,34 @@
         }
     }
 }
+
+.products-slider{
+    position: relative;
+
+    .bx-wrapper{
+        border: 0;
+        background: transparent;
+        box-shadow: none;
+    }
+}
+
+.product-slider__arrow {
+    background: url('../images/icons/left.svg') center center no-repeat;
+    background-size: contain;
+    display: block;
+    width: rem(13px);
+    height: rem(28px);
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+
+    &--direction--next {
+        right: 0;
+        transform: rotate(-180deg);
+    }
+
+    &--direction--prev {
+        left: 0;
+        
+    }
+}

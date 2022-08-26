@@ -53,6 +53,29 @@
     background: none;
     font-weight: 700;
     font-size: 18px;
+    cursor: pointer;
+
+    &::after{
+        display: inline-block;
+        content: "";
+        border: 9.5px solid transparent;
+        border-top-color: #E01F3D;
+        border-left: 4.5px solid transparent;
+        border-right: 4.5px solid transparent;
+        border-bottom: none;
+        margin-left: rem(4px);
+        transform: translateY(-1px);
+        transition: 0.4s;
+    }
+
+    @include tablets{
+        order: -1;
+        margin-bottom: rem(15px);
+    }
+}
+
+.team__item.active .team__title::after{
+    transform: rotate(180deg);
 }
 
 .team--version--desktop .team__content{
@@ -61,7 +84,6 @@
 }
 
 .team--version--mobile .team__content{
-    position: absolute;
     top: 100%;
 }
 
