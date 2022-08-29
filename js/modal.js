@@ -46,10 +46,14 @@ $('.form').submit(e =>{
              
             }
         });
-
-        request.done(data => {
+        request.done((data) => {
+            const isErr = data.status === 0;
+            if (isErr) {
+              modal.addClass("error-modal");
+            }
             content.text(data.message);
-        });
+          });
+
 
         request.fail(data => {
 
