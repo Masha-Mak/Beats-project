@@ -3,6 +3,7 @@ const validateFields = (form, fieldsArray) => {
     fieldsArray.forEach(field => {
         field.removeClass("input-error");
 
+
         if (field.val().trim() == "") {
             field.addClass("input-error");
         }
@@ -15,6 +16,7 @@ const validateFields = (form, fieldsArray) => {
 
 $('.form').submit(e =>{
     e.preventDefault();
+
 
     const form = $(e.currentTarget);
     const name = form.find("[name='name']");
@@ -40,7 +42,7 @@ $('.form').submit(e =>{
                 comment: comment.val(),
                 to: to.val(),
             },
-            error: data => {
+            error: (data) => {
              
             }
         });
@@ -50,7 +52,9 @@ $('.form').submit(e =>{
         });
 
         request.fail(data => {
-            const message = data.responseJSON.message;
+
+
+            const message = "Упс... ошибка";
             content.text(message);
             modal.addClass("error-modal");
 

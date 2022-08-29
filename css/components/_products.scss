@@ -37,6 +37,7 @@
     &__info{
         margin-left: rem(59px);
         flex: 1;
+        padding-right: 39px;
 
         @include tablets{
             display: flex;
@@ -127,6 +128,10 @@
     position: absolute;
     top: 50%;
     z-index: 10;
+
+    @include tablets{
+        top: 20%;
+    }
 
     &--direction--next {
         right: 0;
