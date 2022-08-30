@@ -1214,6 +1214,84 @@ img {
   margin-bottom: 10px;
 }
 
+.products-menu-section {
+  background: url(../images/sport.png) center center/cover no-repeat;
+  position: relative;
+}
+.products-menu-section::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 20, 20, 0.3);
+  top: 0;
+  left: 0;
+}
+
+.products-menu-section .products-menu-section__title {
+  color: #FFFFFF;
+  position: absolute;
+  margin-left: 84px;
+}
+
+.products-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
+}
+.products-menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.products-menu__item-grey {
+  background-color: #999999;
+}
+.products-menu__item-black {
+  background-color: #151515;
+}
+.products-menu__item-red {
+  background-color: #E01F3C;
+}
+.products-menu__title {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 102px;
+}
+.products-menu__text {
+  position: absolute;
+  right: -118px;
+  bottom: 28%;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  color: #FFFFFF;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  white-space: nowrap;
+  z-index: 1;
+}
+.products-menu__content {
+  background: rgba(51, 53, 55, 0.9);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  width: 0;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: width 0.7s;
+  transition: width 0.7s;
+}
+.products-menu__container {
+  padding: 31px 80px 31px 38px;
+}
+
 .reviews__display {
   background: #F8FAF9;
   padding: 2.3333333333rem;
