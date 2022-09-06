@@ -12,7 +12,7 @@
 <body>
     <div class="wrapper">
         <div class="maincontent">
-            <section class="hero">
+            <section data-sidemenu-theme="black" data-section-id="hero" class="hero">
                 <div class="container hero__container">
                     <header class="header">
                         <svg class="logo">
@@ -20,13 +20,13 @@
                         </svg>
                         <nav class="menu">
                             <ul class="menu__list">
-                                <li class="menu__item"><a href="" class="menu__link">О нас</a></li>
-                                <li class="menu__item"><a href="" class="menu__link">Наушники</a></li>
-                                <li class="menu__item"><a href="" class="menu__link">Команда</a></li>
-                                <li class="menu__item"><a href="" class="menu__link">Цвета</a></li>
-                                <li class="menu__item"><a href="" class="menu__link">Отзывы</a></li>
-                                <li class="menu__item"><a href="" class="menu__link">Как мы работаем</a></li>
-                                <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
+                                <li class="menu__item"><a href="#" data-scroll-to="benefits" class="menu__link">О нас</a></li>
+                                <li class="menu__item"><a href="#" data-scroll-to="products" class="menu__link">Наушники</a></li>
+                                <li class="menu__item"><a href="#" data-scroll-to="team" class="menu__link">Команда</a></li>
+                                <li class="menu__item"><a href="#" data-scroll-to="products-menu" class="menu__link">Цвета</a></li>
+                                <li class="menu__item"><a href="#" data-scroll-to="reviews" class="menu__link">Отзывы</a></li>
+                                <li class="menu__item"><a href="#" data-scroll-to="video" class="menu__link">Как мы работаем</a></li>
+                                <li class="menu__item"><a href="#" data-scroll-to="contacts" class="menu__link">Контакты</a></li>
                             </ul>
                         </nav>
                         <a href="tel:+78009039090" class="phone-number header__phone-number">
@@ -44,7 +44,7 @@
                     <div class="hero__title-section">
                         <h1 class="hero__main-title">Беспроводные наушники Beats Solo 3</h1>
                         <div class="hero__title-desc">Встречайте новую версию наушников из линейки Powerbeats.</div>
-                        <a href="" class="btn btn--theme--red">Заказать</a>
+                        <a href="#" data-scroll-to="order" class="btn btn--theme--red">Заказать</a>
                     </div>
                     <div class="hero__icons-section">
                         <ul class="features">
@@ -71,7 +71,7 @@
 
                 </div>
             </section>
-            <section class="section benefits-section">
+            <section data-sidemenu-theme="black" data-section-id="benefits" class="section benefits-section">
                 <div class="container">
                     <div class="headline">
                         <h2 class="section__title headline__title">Почему beats solo 3?</h2>
@@ -127,7 +127,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="section products">
+            <section data-sidemenu-theme="black" data-section-id="products" class="section products">
                 <div class="container">
                     <div class="products-slider">
                     <div class="product-slider__arrows">
@@ -254,7 +254,7 @@
                 </div>
             </section>
 
-            <section class="section team-section">
+            <section data-sidemenu-theme="black" data-section-id="team" class="section team-section">
                 <div class="container">
                     <div class="section__title">Команда</div>
                     <ul class="team team--version--desktop">
@@ -361,7 +361,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="section products-menu-section">
+            <section data-sidemenu-theme="black" data-section-id="products-menu" class="section products-menu-section">
                 <h1 class="section__title products-menu-section__title">Цвета</h1>
                 <ul class="products-menu">
                     <li class="products-menu__item products-menu__item-grey">
@@ -404,7 +404,7 @@
                 </ul>
             </section>
 
-            <section class="section reviews-section">
+            <section data-sidemenu-theme="black" data-section-id="reviews" class="section reviews-section">
                 <div class="container">
                     <h2 class="section__title">Отзывы</h2>
                     <div class="reviews">
@@ -477,7 +477,49 @@
                     </div>
                 </div>
             </section>
-            <section class="section order-section section--font-color--white">
+            <section data-sidemenu-theme="black" data-section-id="video" class="section video-section">
+                <div class="container container--video">
+                    <div class="head-video">
+                        <h2 class="section__title section__title--black">Как мы работаем</h2>
+                    </div>
+                    <div class="video">
+                        <div class="video__wrap">
+                            <div class="video__item" id="yt-player"></div>
+                            <div class="video__splash">
+                                <div class="video__playbig">
+                                    <svg class="video__playbig-icon">
+                                        <use href="./images/icons/sprite.svg#play"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video__controls">
+                            <div class="video__playsmall">
+                                <svg class="video__playsmall-icon">
+                                    <use href="./images/icons/sprite.svg#play"></use>
+                                </svg>
+                            </div>
+                            <div class="video__progress">
+                                <span class="video__total">
+                                    <span class="video__current"></span>
+                                </span>
+                            </div>
+                            <div class="video__volume">
+                                <div class="video__volume-control">
+                                    <svg class="video__volume-icon">
+                                        <use href="./images/icons/sprite.svg#play-volume"></use>
+                                    </svg>
+                                </div>
+                                <div class="video__volume-progress">
+                                    <span class="video__volume-current"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-sidemenu-theme="white" data-section-id="order" class="section order-section section--font-color--white">
                 <div class="container">
                     <h2 class="section__title">Закажите доставку</h2>
                     <form action="" class="form">
@@ -552,17 +594,8 @@
                     </form>
                 </div>
             </section>
-            <div id="modal" class="modal">
-                <div class="modal__container">
-                    <div class="modal__content">
-                        Сообщение отправлено
-                    </div>
-                    <div class="modal__button-container">
-                        <a href="" class="btn app-submit-btn btn--theme--red">Закрыть</a>
-                    </div>
-                </div>
-            </div>
-            <section class="section map-section">
+            
+            <section data-sidemenu-theme="black" data-section-id="contacts" class="section map-section">
                 <div id="map"></div>
                 <footer class="footer">
                     <div class="container footer__container">
@@ -614,17 +647,17 @@
             </section>
         </div>
     </div>
-    <nav class="fixed-menu">
+    <nav class="fixed-menu fixed-menu--shadowed">
         <ul class="fixed-menu__list">
-            <li class="fixed-menu__item fixed-menu__item--active"><a href="" class="fixed-menu__link"></a></li>
-            <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-            <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-            <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-            <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-            <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-            <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-            <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-            <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
+            <li class="fixed-menu__item fixed-menu__item--active"><a href="" data-scroll-to="hero" class="fixed-menu__link"></a></li>
+            <li class="fixed-menu__item"><a href="" data-scroll-to="benefits" class="fixed-menu__link"></a></li>
+            <li class="fixed-menu__item"><a href="" data-scroll-to="products" class="fixed-menu__link"></a></li>
+            <li class="fixed-menu__item"><a href="" data-scroll-to="team" class="fixed-menu__link"></a></li>
+            <li class="fixed-menu__item"><a href="" data-scroll-to="products-menu" class="fixed-menu__link"></a></li>
+            <li class="fixed-menu__item"><a href="" data-scroll-to="reviews" class="fixed-menu__link"></a></li>
+            <li class="fixed-menu__item"><a href="" data-scroll-to="video" class="fixed-menu__link"></a></li>
+            <li class="fixed-menu__item"><a href="" data-scroll-to="order" class="fixed-menu__link"></a></li>
+            <li class="fixed-menu__item"><a href="" data-scroll-to="contacts" class="fixed-menu__link"></a></li>
         </ul>
     </nav>
     <div class="fullscreen-menu" id="full-menu">
@@ -659,15 +692,32 @@
             </svg>
         </button>
     </div>
+    <div id="modal" class="modal">
+        <div class="modal__container">
+            <div class="modal__content">
+                Сообщение отправлено
+            </div>
+            <div class="modal__button-container">
+                <a href="" class="btn app-submit-btn btn--theme--red">Закрыть</a>
+            </div>
+        </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.5/mobile-detect.min.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/ops.js"></script>
+    <script src="./js/player.js"></script>
     <script src="./js/acco.js"></script>
     <script src="./js/menu-acco.js"></script>
     <script src="./js/tabs.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/map.js"></script>
 
 </body>
 </html>
