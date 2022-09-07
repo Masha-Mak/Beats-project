@@ -17,9 +17,9 @@ const eventPlay = (playTarget) => {
     }
   });
 
-  $('video__progress').click(e => {
+  $('.video__total').click(e => {
     const bar = $(e.currentTarget);
-    const clickedPosition = e.originalEvent.layerX;
+    const clickedPosition = e.offsetX;
 
     const newButtonPositionPercent = (clickedPosition / bar.width()) * 100;
     const newPlaybackPositionSec = 
@@ -50,7 +50,7 @@ function onYouTubeIframeAPIReady() {
     width: "662",
     videoId: "LXb3EKWsInQ",
     events:{
-      // onReady: onPlayerReady,
+      onReady: onPlayerReady,
       // onStateChange: onPlayerStateChange
     },
     playerVars: {
@@ -72,7 +72,7 @@ function onPlayerReady() {
     $(".video__current").css({
       left: `${completedPercent}%`,
     })
-  } 1000);
+  }, 1000);
   eventPlay(playBig);
   eventPlay(playSmall);
 }
